@@ -1,7 +1,7 @@
 ﻿
 namespace HotelManagement
 {
-    partial class Form1
+    partial class FormLogin
     {
         /// <summary>
         /// Required designer variable.
@@ -117,6 +117,7 @@ namespace HotelManagement
             // 
             // guna2Button1
             // 
+            this.guna2Button1.BackColor = System.Drawing.Color.Transparent;
             this.guna2Button1.BorderRadius = 5;
             this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -131,6 +132,7 @@ namespace HotelManagement
             this.guna2Button1.Size = new System.Drawing.Size(195, 45);
             this.guna2Button1.TabIndex = 7;
             this.guna2Button1.Text = "Sign up with Google";
+            this.guna2Button1.UseTransparentBackground = true;
             // 
             // guna2PictureBox1
             // 
@@ -163,7 +165,7 @@ namespace HotelManagement
             this.ExitButton.UseTransparentBackground = true;
             this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
             // 
-            // Form1
+            // FormLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -179,7 +181,7 @@ namespace HotelManagement
             this.Controls.Add(this.LoginButton);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Location = new System.Drawing.Point(0, 500);
-            this.Name = "Form1";
+            this.Name = "FormLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "HotelManagement";
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();

@@ -5,11 +5,11 @@ E:\HotelProject\HotelManagement\HotelManagement\bin\Debug\FigmaSharp.dll
 E:\HotelProject\HotelManagement\HotelManagement\bin\Debug\Guna.UI2.dll
 E:\HotelProject\HotelManagement\HotelManagement\bin\Debug\Newtonsoft.Json.dll
 E:\HotelProject\HotelManagement\HotelManagement\obj\Debug\HotelManagement.csproj.AssemblyReference.cache
-E:\HotelProject\HotelManagement\HotelManagement\obj\Debug\HotelManagement.Form1.resources
 E:\HotelProject\HotelManagement\HotelManagement\obj\Debug\HotelManagement.Properties.Resources.resources
 E:\HotelProject\HotelManagement\HotelManagement\obj\Debug\HotelManagement.csproj.GenerateResource.cache
 E:\HotelProject\HotelManagement\HotelManagement\obj\Debug\HotelManagement.csproj.CoreCompileInputs.cache
 E:\HotelProject\HotelManagement\HotelManagement\obj\Debug\HotelManagement.csproj.CopyComplete
 E:\HotelProject\HotelManagement\HotelManagement\obj\Debug\HotelManagement.exe
 E:\HotelProject\HotelManagement\HotelManagement\obj\Debug\HotelManagement.pdb
-E:\HotelProject\HotelManagement\HotelManagement\obj\Debug\HotelManagement.Form2.resources
+E:\HotelProject\HotelManagement\HotelManagement\obj\Debug\HotelManagement.FormLogin.resources
+E:\HotelProject\HotelManagement\HotelManagement\obj\Debug\HotelManagement.FormHome.resources

@@ -1,7 +1,7 @@
 ﻿
 namespace HotelManagement
 {
-    partial class Form2
+    partial class FormHome
     {
         /// <summary>
         /// Required designer variable.
@@ -69,6 +69,7 @@ namespace HotelManagement
             this.ManageButton.Size = new System.Drawing.Size(264, 100);
             this.ManageButton.TabIndex = 2;
             this.ManageButton.Text = "MANAGE";
+            this.ManageButton.Click += new System.EventHandler(this.ManageButton_Click);
             // 
             // EntertainButton
             // 
@@ -84,6 +85,7 @@ namespace HotelManagement
             this.EntertainButton.Size = new System.Drawing.Size(252, 100);
             this.EntertainButton.TabIndex = 2;
             this.EntertainButton.Text = "ENTERTAIN";
+            this.EntertainButton.Click += new System.EventHandler(this.EntertainButton_Click);
             // 
             // FoodButton
             // 
@@ -99,6 +101,7 @@ namespace HotelManagement
             this.FoodButton.Size = new System.Drawing.Size(252, 100);
             this.FoodButton.TabIndex = 2;
             this.FoodButton.Text = "FOOD";
+            this.FoodButton.Click += new System.EventHandler(this.FoodButton_Click);
             // 
             // RoomButton
             // 
@@ -107,13 +110,14 @@ namespace HotelManagement
             this.RoomButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.RoomButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.RoomButton.FillColor = System.Drawing.Color.Transparent;
-            this.RoomButton.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RoomButton.Font = new System.Drawing.Font("Segoe UI", 13.8F);
             this.RoomButton.ForeColor = System.Drawing.Color.Black;
             this.RoomButton.Location = new System.Drawing.Point(249, 0);
             this.RoomButton.Name = "RoomButton";
             this.RoomButton.Size = new System.Drawing.Size(252, 100);
             this.RoomButton.TabIndex = 2;
             this.RoomButton.Text = "ROOM";
+            this.RoomButton.Click += new System.EventHandler(this.RoomButton_Click);
             // 
             // HomeButton
             // 
@@ -123,13 +127,14 @@ namespace HotelManagement
             this.HomeButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.HomeButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.HomeButton.FillColor = System.Drawing.Color.Transparent;
-            this.HomeButton.Font = new System.Drawing.Font("Segoe UI", 13.8F);
+            this.HomeButton.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.HomeButton.ForeColor = System.Drawing.Color.Black;
             this.HomeButton.Location = new System.Drawing.Point(0, 0);
             this.HomeButton.Name = "HomeButton";
             this.HomeButton.Size = new System.Drawing.Size(252, 100);
             this.HomeButton.TabIndex = 1;
             this.HomeButton.Text = "HOME";
+            this.HomeButton.Click += new System.EventHandler(this.HomeButton_Click);
             // 
             // guna2Panel1
             // 
@@ -143,13 +148,16 @@ namespace HotelManagement
             // 
             // ExitButton
             // 
+            this.ExitButton.BorderRadius = 6;
             this.ExitButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.ExitButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.ExitButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.ExitButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.ExitButton.FillColor = System.Drawing.Color.Transparent;
             this.ExitButton.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.ExitButton.ForeColor = System.Drawing.Color.White;
+            this.ExitButton.ForeColor = System.Drawing.Color.Black;
+            this.ExitButton.Image = global::HotelManagement.Properties.Resources.exit_icon_icons_com_48304;
+            this.ExitButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.ExitButton.Location = new System.Drawing.Point(1132, 525);
             this.ExitButton.Name = "ExitButton";
             this.ExitButton.Size = new System.Drawing.Size(127, 45);
@@ -157,7 +165,7 @@ namespace HotelManagement
             this.ExitButton.Text = "Exit";
             this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
             // 
-            // Form2
+            // FormHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -167,7 +175,7 @@ namespace HotelManagement
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Name = "Form2";
+            this.Name = "FormHome";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.panel1.ResumeLayout(false);
             this.guna2Panel1.ResumeLayout(false);
