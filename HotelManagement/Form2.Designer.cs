@@ -35,8 +35,10 @@ namespace HotelManagement
             this.FoodButton = new Guna.UI2.WinForms.Guna2Button();
             this.RoomButton = new Guna.UI2.WinForms.Guna2Button();
             this.HomeButton = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.ExitButton = new Guna.UI2.WinForms.Guna2Button();
             this.panel1.SuspendLayout();
+            this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -115,6 +117,7 @@ namespace HotelManagement
             // 
             // HomeButton
             // 
+            this.HomeButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.HomeButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.HomeButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.HomeButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -128,37 +131,46 @@ namespace HotelManagement
             this.HomeButton.TabIndex = 1;
             this.HomeButton.Text = "HOME";
             // 
+            // guna2Panel1
+            // 
+            this.guna2Panel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Panel1.Controls.Add(this.ExitButton);
+            this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.guna2Panel1.Location = new System.Drawing.Point(0, 100);
+            this.guna2Panel1.Name = "guna2Panel1";
+            this.guna2Panel1.Size = new System.Drawing.Size(1262, 573);
+            this.guna2Panel1.TabIndex = 2;
+            // 
             // ExitButton
             // 
-            this.ExitButton.BackColor = System.Drawing.Color.Transparent;
             this.ExitButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.ExitButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.ExitButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.ExitButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.ExitButton.FillColor = System.Drawing.Color.Transparent;
             this.ExitButton.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.ExitButton.ForeColor = System.Drawing.Color.Black;
-            this.ExitButton.Image = global::HotelManagement.Properties.Resources.exit_icon_icons_com_48304;
-            this.ExitButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.ExitButton.Location = new System.Drawing.Point(1145, 624);
+            this.ExitButton.ForeColor = System.Drawing.Color.White;
+            this.ExitButton.Location = new System.Drawing.Point(1132, 525);
             this.ExitButton.Name = "ExitButton";
-            this.ExitButton.Size = new System.Drawing.Size(117, 46);
-            this.ExitButton.TabIndex = 1;
+            this.ExitButton.Size = new System.Drawing.Size(127, 45);
+            this.ExitButton.TabIndex = 0;
             this.ExitButton.Text = "Exit";
-            this.ExitButton.UseTransparentBackground = true;
             this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.PaleTurquoise;
             this.BackgroundImage = global::HotelManagement.Properties.Resources._822;
             this.ClientSize = new System.Drawing.Size(1262, 673);
-            this.Controls.Add(this.ExitButton);
+            this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Form2";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.panel1.ResumeLayout(false);
+            this.guna2Panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -171,6 +183,7 @@ namespace HotelManagement
         private Guna.UI2.WinForms.Guna2Button FoodButton;
         private Guna.UI2.WinForms.Guna2Button RoomButton;
         private Guna.UI2.WinForms.Guna2Button HomeButton;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2Button ExitButton;
     }
 }

@@ -17,15 +17,13 @@ namespace HotelManagement
             InitializeComponent();
         }
 
-        private void ActivateButton(object btnSender)
-        {
-            if (btnSender != null)
-            { }
-        }
+        
 
         private void ExitButton_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
+
+      
     }
 }
