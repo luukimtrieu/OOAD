@@ -13,3 +13,7 @@ E:\HotelProject\HotelManagement\HotelManagement\obj\Debug\HotelManagement.exe
 E:\HotelProject\HotelManagement\HotelManagement\obj\Debug\HotelManagement.pdb
 E:\HotelProject\HotelManagement\HotelManagement\obj\Debug\HotelManagement.FormLogin.resources
 E:\HotelProject\HotelManagement\HotelManagement\obj\Debug\HotelManagement.FormHome.resources
+E:\HotelProject\HotelManagement\HotelManagement\obj\Debug\HotelManagement.Forms.FormRoom.resources
+E:\HotelProject\HotelManagement\HotelManagement\obj\Debug\HotelManagement.Forms.FormEntertain.resources
+E:\HotelProject\HotelManagement\HotelManagement\obj\Debug\HotelManagement.Forms.FormFood.resources
+E:\HotelProject\HotelManagement\HotelManagement\obj\Debug\HotelManagement.Forms.FormManage.resources

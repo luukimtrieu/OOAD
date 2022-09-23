@@ -55,41 +55,77 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FormLogin.cs">
+    <Compile Include="Forms\FormEntertain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormLogin.Designer.cs">
+    <Compile Include="Forms\FormEntertain.Designer.cs">
+      <DependentUpon>FormEntertain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormFood.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormFood.Designer.cs">
+      <DependentUpon>FormFood.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormLogin.Designer.cs">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormHome.cs">
+    <Compile Include="Forms\FormHome.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormHome.Designer.cs">
+    <Compile Include="Forms\FormHome.Designer.cs">
       <DependentUpon>FormHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormManage.Designer.cs">
+      <DependentUpon>FormManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormRoom.Designer.cs">
+      <DependentUpon>FormRoom.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FormLogin.resx">
+    <EmbeddedResource Include="Forms\FormEntertain.resx">
+      <DependentUpon>FormEntertain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormFood.resx">
+      <DependentUpon>FormFood.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormHome.resx">
+    <EmbeddedResource Include="Forms\FormHome.resx">
       <DependentUpon>FormHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormManage.resx">
+      <DependentUpon>FormManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormRoom.resx">
+      <DependentUpon>FormRoom.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -100,19 +136,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\1497618981-2_85115.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\eye_visible_hide_hidden_show_icon_145988.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\google_icon-icons.com_62736.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\82.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\821.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\822.jpg" />
@@ -124,22 +148,37 @@
     <None Include="Resources\key_password_icon_142997.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\photo-1517495306984-f84210f9daa8.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\photo-1517495306984-f84210f9daa81.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\1496677259-6_84650.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\hotel_vacations_hotel_buildings_holidays_icon_134538.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\github-logo_icon-icons.com_73546.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\exit_icon-icons.com_48304.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_77928.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chicken.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spagheti.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sushi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cola.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sprite.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chivas.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RHQ-80s-Dance-Party-Website.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

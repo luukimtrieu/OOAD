@@ -14,6 +14,7 @@ namespace HotelManagement
     public partial class FormHome : Form
     {
         private Guna2Button currentButton;
+        private Form currentchildForm;
         public FormHome()
         {
             InitializeComponent();
@@ -24,11 +25,11 @@ namespace HotelManagement
             {
                 if(currentButton != (Guna2Button)btnSender)
                 {
-                DisableButton();
-                currentButton = (Guna2Button)btnSender;
-                currentButton.BackColor = Color.SteelBlue;
-                currentButton.ForeColor = Color.White;
-                currentButton.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                    DisableButton();
+                    currentButton = (Guna2Button)btnSender;
+                    currentButton.BackColor = Color.LightSkyBlue;
+                    currentButton.ForeColor = Color.White;
+                    currentButton.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
                 }
             }
         }
@@ -45,6 +46,23 @@ namespace HotelManagement
                 }
             }
         }
+
+        private void OpenchildForm(Form childForm, object btnSender)
+        {
+            if (currentchildForm != null)
+            {
+                currentchildForm.Close();
+            }
+            ActivateButton(btnSender);
+            currentchildForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            this.guna2Panel1.Controls.Add(childForm);
+            this.guna2Panel1.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
+        }
         private void ExitButton_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -52,27 +70,44 @@ namespace HotelManagement
 
         private void RoomButton_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender);
+            if (currentButton != (Guna2Button)sender)
+            {
+                OpenchildForm(new Forms.FormRoom(), sender);
+            }
         }
 
         private void FoodButton_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender);
+            if (currentButton != (Guna2Button)sender)
+            {
+               OpenchildForm(new Forms.FormFood(), sender);
+            }
         }
 
         private void EntertainButton_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender);
+            if (currentButton != (Guna2Button)sender)
+            {
+                OpenchildForm(new Forms.FormEntertain(), sender);
+            }
         }
 
         private void ManageButton_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender);
+            if (currentButton != (Guna2Button)sender)
+            {
+                OpenchildForm(new Forms.FormManage(), sender);
+            }
         }
 
         private void HomeButton_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender);
+            if(currentchildForm != null)
+            {
+                ActivateButton(sender);
+                currentchildForm.Close();
+            }
+            DisableButton();
         }
     }
 }

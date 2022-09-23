@@ -64,7 +64,7 @@ namespace HotelManagement
             this.ManageButton.FillColor = System.Drawing.Color.Transparent;
             this.ManageButton.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ManageButton.ForeColor = System.Drawing.Color.Black;
-            this.ManageButton.Location = new System.Drawing.Point(998, 0);
+            this.ManageButton.Location = new System.Drawing.Point(995, 0);
             this.ManageButton.Name = "ManageButton";
             this.ManageButton.Size = new System.Drawing.Size(264, 100);
             this.ManageButton.TabIndex = 2;
