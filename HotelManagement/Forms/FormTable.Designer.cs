@@ -1,7 +1,7 @@
 ﻿
 namespace HotelManagement.Forms
 {
-    partial class FormRoom
+    partial class FormTable
     {
         /// <summary>
         /// Required designer variable.
@@ -31,15 +31,15 @@ namespace HotelManagement.Forms
         {
             this.SuspendLayout();
             // 
-            // FormRoom
+            // FormTable
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(37)))), ((int)(((byte)(55)))));
             this.ClientSize = new System.Drawing.Size(1262, 573);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FormRoom";
-            this.Text = "FormRoom";
+            this.Name = "FormTable";
+            this.Text = "FormTable";
             this.ResumeLayout(false);
 
         }

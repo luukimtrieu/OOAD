@@ -66,7 +66,7 @@ namespace HotelManagement
             this.ManageButton.ForeColor = System.Drawing.Color.Black;
             this.ManageButton.Location = new System.Drawing.Point(995, 0);
             this.ManageButton.Name = "ManageButton";
-            this.ManageButton.Size = new System.Drawing.Size(264, 100);
+            this.ManageButton.Size = new System.Drawing.Size(267, 100);
             this.ManageButton.TabIndex = 2;
             this.ManageButton.Text = "MANAGE";
             this.ManageButton.Click += new System.EventHandler(this.ManageButton_Click);
@@ -140,7 +140,6 @@ namespace HotelManagement
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2Panel1.Controls.Add(this.ExitButton);
-            this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 100);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(1262, 573);
@@ -174,7 +173,6 @@ namespace HotelManagement
             this.ClientSize = new System.Drawing.Size(1262, 673);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "FormHome";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.panel1.ResumeLayout(false);

@@ -15,5 +15,6 @@ E:\HotelProject\HotelManagement\HotelManagement\obj\Debug\HotelManagement.FormLo
 E:\HotelProject\HotelManagement\HotelManagement\obj\Debug\HotelManagement.FormHome.resources
 E:\HotelProject\HotelManagement\HotelManagement\obj\Debug\HotelManagement.Forms.FormRoom.resources
 E:\HotelProject\HotelManagement\HotelManagement\obj\Debug\HotelManagement.Forms.FormEntertain.resources
-E:\HotelProject\HotelManagement\HotelManagement\obj\Debug\HotelManagement.Forms.FormFood.resources
 E:\HotelProject\HotelManagement\HotelManagement\obj\Debug\HotelManagement.Forms.FormManage.resources
+E:\HotelProject\HotelManagement\HotelManagement\obj\Debug\HotelManagement.Forms.FormOrder.resources
+E:\HotelProject\HotelManagement\HotelManagement\obj\Debug\HotelManagement.Forms.FormTable.resources

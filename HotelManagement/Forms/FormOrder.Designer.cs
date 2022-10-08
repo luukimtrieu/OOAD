@@ -1,7 +1,7 @@
 ﻿
 namespace HotelManagement.Forms
 {
-    partial class FormFood
+    partial class FormOrder
     {
         /// <summary>
         /// Required designer variable.

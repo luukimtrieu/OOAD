@@ -27,7 +27,7 @@ namespace HotelManagement
                 {
                     DisableButton();
                     currentButton = (Guna2Button)btnSender;
-                    currentButton.BackColor = Color.LightSkyBlue;
+                    currentButton.BackColor = Color.FromArgb(39,37,55);
                     currentButton.ForeColor = Color.White;
                     currentButton.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
                 }
@@ -80,7 +80,7 @@ namespace HotelManagement
         {
             if (currentButton != (Guna2Button)sender)
             {
-               OpenchildForm(new Forms.FormFood(), sender);
+               OpenchildForm(new Forms.FormTable(), sender);
             }
         }
 
